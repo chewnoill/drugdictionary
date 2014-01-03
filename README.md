@@ -1,5 +1,5 @@
-drugdictionary
-==============
+Drug Dictionary
+===============
 
 Post JSON formatted queries to the app engine to 
 access the drug database.  Most valid queries will follow
@@ -15,10 +15,14 @@ this basic form:
 
 ```
 String: utf-8 coded string
+```
+```
 HTML_Text: HTML formated text
 ```
 
-*drug* prototype
+drug prototype
+---
+
 ```JSON
 {"generic_name":	String,
  "brand_name":	String,
@@ -38,7 +42,8 @@ HTML_Text: HTML formated text
 
 ---
 
-*type drug_list*
+type drug_list
+---
 
 ```JSON
 {
@@ -48,12 +53,12 @@ HTML_Text: HTML formated text
 }
 ```
 
-The response to this query can be quite huge, I may decide
-to change it later, but fairly simple.
+The response to this query, which can be quite huge and I may decide
+to change it later, is fairly simple.  The response "type" will 
+"list" and "data" will be a list of drugs: 
 
 ```JSON 
-{type: "list", 
- data: [drug]
+{"type": "list", 
+ "data": [drug]
 } 	   
 ```	
- 
