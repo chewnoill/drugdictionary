@@ -13,6 +13,8 @@ this basic form:
 }
 ```
 
+
+
 ```
 String: utf-8 coded string
 ```
@@ -42,8 +44,10 @@ drug prototype
 
 ---
 
-type drug_list
+type: "drug_list"
 ---
+
+URL: https://drugdictionary.appspot.com/ajax.json
 
 ```JSON
 {
